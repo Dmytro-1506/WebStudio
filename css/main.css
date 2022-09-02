@@ -414,18 +414,33 @@ button {
   fill: currentColor;
 }
 
+.portfolio-buttons .container {
+  margin: 0;
+  max-width: 330px;
+}
+@media screen and (min-width: 900px) {
+  .portfolio-buttons .container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
 .list-btn {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
 }
-.list-btn .list-btn__item {
-  margin-right: 8px;
+@media screen and (min-width: 900px) {
+  .list-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
-.list-btn .list-btn__item:last-child {
-  margin-right: 0;
-}
-.list-btn .list-btn__item .btn {
+
+.list-btn__item .btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -438,7 +453,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-btn .list-btn__item .btn:hover, .list-btn .list-btn__item .btn:focus {
+.list-btn__item .btn:hover, .list-btn__item .btn:focus {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
