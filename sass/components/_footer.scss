@@ -1,0 +1,45 @@
+.footer {
+    background-color: $background-color-footer;
+    color: $bright-text;
+    padding: 60px 0;
+    
+    .container {
+        display: flex;
+        align-items: baseline;
+    }
+    .footer__logo {
+        font-family: 'Raleway';
+        font-size: 26px;
+        line-height: 1.2;
+        color: $bright-text;
+    }
+    .footer__logo-decor {
+        color: $accent-color;
+    }
+    .address {
+        font-style: normal;
+        margin-top: 20px;
+
+        .address__link {
+            line-height: 1.71;
+            color: $bright-text;
+        }
+        .address__list-item {
+            margin-bottom: 9px;
+        }
+        .footer__link {
+            line-height: 1.71;
+            color: $link-color;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+        .footer__tel {
+            margin-bottom: 0;
+        }
+    }
+}

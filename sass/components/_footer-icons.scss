@@ -1,0 +1,47 @@
+.footer__icons-box {
+    margin-left: 70px;
+    align-items: baseline;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    .footer__title {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $bright-text;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .footer__icons-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer__icon {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    .footer__icon-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+    }
+    .footer__svg {
+        fill: $bright-text;
+    }
+}

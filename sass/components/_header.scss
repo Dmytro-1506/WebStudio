@@ -1,0 +1,88 @@
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid $header-line-color;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+    color: $dark-text;
+    .logo__decor {
+        color: $accent-color;
+    }
+}
+
+.nav {
+    margin-right: auto;
+    .nav-list {
+        display: flex;
+        margin-right: auto;
+        .nav-list__item {
+            margin-right: 50px;
+            position: relative;
+        }
+        .nav-list__link {
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: $primary-text-color;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+        
+        .current-link {
+            font-weight: 500;
+            color: $accent-color;
+            &::after {
+                position: absolute;
+                content: ' ';
+                width: 100%;
+                height: 4px;
+                bottom: -33.5px;
+                left: 0;
+                border-radius: 2px;
+                background-color: $accent-color;
+            }
+        }
+    }
+}
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+    .contacts__link {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $secondary-text-color;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+    .header__mail {
+        margin-right: 50px;
+    }
+    .contacts__icon {
+        display: inline-block;
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
