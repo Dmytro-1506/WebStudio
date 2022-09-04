@@ -79,12 +79,21 @@ button {
   margin: -1px;
 }
 
-.title, .clients .clients__title, .our-team .our-team__title, .our-job .our-job__title {
+.title, .clients .clients__title, .our-job .our-job__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+  color: #212121;
+}
+
+.title-mobile, .our-team .our-team__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
   color: #212121;
 }
 
@@ -327,21 +336,50 @@ button {
 .our-team {
   background: #f5f4fa;
 }
-.our-team .our-team__list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .our-team .our-team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team .our-team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 770px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team .our-team__list {
+    flex-wrap: nowrap;
+    max-width: 1200px;
+  }
 }
 .our-team .our-team__person {
   background-color: #ffffff;
-  margin-right: 30px;
+  margin-bottom: 30px;
   border-radius: 4px;
-  align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .our-team .our-team__person:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .our-team .our-team__person {
+    width: 354px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team .our-team__person {
+    width: 270px;
+  }
 }
 .our-team .our-team__person-info {
-  padding: 30px 0;
+  padding: 30px 0 24px;
   text-align: center;
   align-items: center;
 }
@@ -412,11 +450,11 @@ button {
   }
 }
 .clients .clients__list-item {
-  width: calc(50% - 15px);
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients .clients__list-item {
-    width: calc(33.3333333333% - 20px);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
