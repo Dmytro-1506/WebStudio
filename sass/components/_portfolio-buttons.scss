@@ -1,11 +1,14 @@
 .portfolio-buttons {
+    .container {
+        margin: 0;
+    }
         // margin: 0;
         // max-width: 350px;
-        @media screen and (min-width: 900px) {
-                // max-width: 100%;
-                // margin: 0 auto;
-                // margin-bottom: 50px;
-            }
+        // @media screen and (min-width: 768px) {
+        //         max-width: 100%;
+        //         margin: 0 auto;
+        //         margin-bottom: 50px;
+        //     }
     }
 
 .list-btn {
@@ -16,7 +19,7 @@
     row-gap: 15px;
     margin-bottom: 40px;
     max-width: 350px;
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
