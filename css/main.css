@@ -88,6 +88,15 @@ button {
   color: #212121;
 }
 
+.footer__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+
 .title-mobile, .our-team .our-team__title {
   font-weight: 700;
   font-size: 28px;
@@ -648,9 +657,36 @@ button {
   color: #ffffff;
   padding: 60px 0;
 }
-.footer .container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 770px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    max-width: 1200px;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+}
+.footer .footer__box1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer .footer__box1 {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer__box1 {
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 .footer .footer__logo {
   font-family: "Raleway";
@@ -687,24 +723,23 @@ button {
 }
 
 .footer__icons-box {
-  margin-left: 70px;
-  align-items: baseline;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
 }
-.footer__icons-box .footer__title {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.14;
+@media screen and (min-width: 1200px) {
+  .footer__icons-box {
+    margin-bottom: 0;
+    text-align: left;
+    align-items: baseline;
+  }
 }
 .footer__icons-box .footer__icons-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 .footer__icons-box .footer__icon {
   margin-right: 10px;
@@ -732,8 +767,14 @@ button {
 }
 
 .footer__submit {
-  position: relative;
-  margin-left: auto;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__submit {
+    margin-left: auto;
+    position: relative;
+    text-align: left;
+  }
 }
 .footer__submit .footer__title {
   font-weight: 700;
@@ -742,13 +783,20 @@ button {
   font-size: 14px;
   line-height: 1.14;
 }
-.footer__submit .footer__input-box {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  .footer__submit .footer__input-box {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__submit .footer__input-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 .footer__submit .footer__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -758,16 +806,23 @@ button {
   color: #ffffff;
   font-size: 16px;
   line-height: 1.25;
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 .footer__submit .footer__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
 }
+@media screen and (min-width: 1200px) {
+  .footer__submit .footer__input {
+    margin-bottom: 0;
+    width: 358px;
+    margin-right: 12px;
+  }
+}
 .footer__submit .footer__submit-btn {
+  width: 200px;
   height: 50px;
-  padding: 0 28px;
   background-color: #2196f3;
   color: #ffffff;
   font-weight: 700;
@@ -775,7 +830,7 @@ button {
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
 }
 .footer__submit .footer__svg {

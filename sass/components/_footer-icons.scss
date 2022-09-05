@@ -1,23 +1,20 @@
 .footer__icons-box {
-    margin-left: 70px;
-    align-items: baseline;
+    // margin-left: 70px;
+    // align-items: baseline;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-
-    .footer__title {
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $bright-text;
-        font-size: 14px;
-        line-height: 1.14;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        text-align: left;
+        align-items: baseline;
     }
-
     .footer__icons-list {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
     }
     .footer__icon {
         margin-right: 10px;
