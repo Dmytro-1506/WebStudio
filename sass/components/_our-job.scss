@@ -30,3 +30,17 @@
         font-weight: 700;
     }
 }
+
+.mobile-hidden {
+    @extend .visually-hidden;
+    @media screen and (min-width: 1200px) {
+        position: static;
+        white-space: nowrap;
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 60px 0;
+        clip-path: none;
+        margin: 0;
+    }
+}
