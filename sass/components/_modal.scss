@@ -9,7 +9,6 @@
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     &.is-hidden {
         visibility: hidden;
         opacity: 0;
@@ -18,8 +17,9 @@
 }
 
 .modal {
+    width: 100%;
+    max-width: 450px;
     position: absolute;
-    width: 528px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -28,6 +28,9 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+    }
 
     .modal__close-btn {
         position: absolute;
@@ -50,9 +53,12 @@
         margin-bottom: 12px;
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         color: $primary-text-color;
+        @media screen and (min-width: 1200px) {
+            line-height: 1.15;
+        }
     }
     .modal__item {
         margin-bottom: 10px;
@@ -61,7 +67,6 @@
     .modal__lable {
         font-size: 12px;
         line-height: 1.17;
-        letter-spacing: 0.01em;
         color: $secondary-text-color;
     }
     .modal__input {
@@ -97,36 +102,41 @@
         &::placeholder {
             font-size: 12px;
             line-height: 1.17;
-            letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
         }
     }
     .modal__checkbox{
         position: relative;
         display: flex;
-        justify-content: center;
         align-items: center;
-        text-align: center;
+        @media screen and (min-width: 1200px) {
+            text-align: center;
+            justify-content: center;
+        }
         .modal__svg {
             position: absolute;
             pointer-events: none;
-            left: 21px;
+            left: 3px;
             top: 50%;
             transform: translateY(-50%);
             fill: transparent;
             transition-property: fill;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @media screen and (min-width: 1200px) {
+                left: 27px;
+            }
         }
     }
     .modal__check-lable {
         position: relative;
         display: flex;
         align-items: center;
-        line-height: 1.71;
+        line-height: 1.17;
         color: $secondary-text-color;
         margin-right: 7px;
         padding-left: 25px;
+        letter-spacing: 0.01em;
         &::before {
             position: absolute;
             left: 0px;
@@ -149,7 +159,7 @@
         background-color: $accent-color;
     }
     .modal__link {
-        line-height: 1.71;
+        line-height: 1.17;
         text-decoration-line: underline;
         color: $accent-color;
     }
