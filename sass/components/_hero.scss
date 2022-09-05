@@ -1,37 +1,83 @@
 .hero {
     background-color: $background-color-footer;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    max-width: 1600px;
+    height: 400px;
+    margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)),
-        url(../images/Designer-team.jpg);
+        url(../../images/HeroMob-x1.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../../images/HeroMob-x2.jpg');
+        }
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)),
+            url('../../images/HeroTab-x1.jpg');
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../../images/HeroTab-x2.jpg');
+        }
+    }
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)),
+            url('../../images/HeroDesc-x1.jpg');
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../../images/HeroDesc-x2.jpg');
+        }
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        max-width: 1600px;
+    }
+    
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
     .hero__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin-bottom: 30px;
+        color: $bright-text;
+    @media screen and (min-width: 468px) {
+        width: 360px;
         margin-left: auto;
         margin-right: auto;
-        color: $bright-text;
+    }
+    @media screen and (min-width: 1200px) {
         width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
     }
     .hero__btn {
         display: block;
+        width: 200px;
+        height: 50px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.06em;
         margin: 0 auto;
-        padding: 10px 32px;
         color: $bright-text;
         background-color: $accent-color;
     }
