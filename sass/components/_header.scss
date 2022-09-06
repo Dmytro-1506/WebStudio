@@ -1,23 +1,40 @@
 .header {
-    padding: 25px 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid $header-line-color;
     .container {
         display: flex;
         align-items: center;
+        margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 80px;
     }
 }
 
 .logo {
     font-family: 'Raleway';
-    font-size: 26px;
-    line-height: 1.2;
-    margin-right: 93px;
+    font-size: 24px;
+    line-height: 1.17;
+    // margin-right: 93px;
     color: $dark-text;
     .logo__decor {
         color: $accent-color;
     }
 }
-
+@media screen and (min-width: 768px) {
+    .header__mobile {
+        position: static;
+        white-space: nowrap;
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 60px 0;
+        clip-path: none;
+        margin: 0;
+    }
+}
 .nav {
     margin-right: auto;
     .nav-list {

@@ -1,0 +1,14 @@
+.js-menu-container {
+    position: absolute;
+    visibility: hidden;
+}
+
+.js-open-menu {
+    background-color: $background-color-one;
+}
+
+.mob-menu__link-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+}
