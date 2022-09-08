@@ -6,32 +6,32 @@
     height: 400px;
     margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)),
-        url(../../images/HeroMob-x1.jpg);
+        url(../images/HeroMob-x1.jpg);
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../../images/HeroMob-x2.jpg');
+        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../images/HeroMob-x2.jpg');
         }
     @media screen and (min-width: 480px) {
         background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)),
-            url('../../images/HeroTab-x1.jpg');
+            url('../images/HeroTab-x1.jpg');
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../../images/HeroTab-x2.jpg');
+            background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../images/HeroTab-x2.jpg');
         }
     }
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)),
-            url('../../images/HeroDesc-x1.jpg');
+            url('../images/HeroDesc-x1.jpg');
     
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../../images/HeroDesc-x2.jpg');
+        background-image: linear-gradient(to right, rgba(47, 38, 58, 0.4), rgba(47, 38, 58, 0.4)), url('../images/HeroDesc-x2.jpg');
         }
     }
     background-repeat: no-repeat;

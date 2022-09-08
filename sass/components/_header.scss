@@ -2,14 +2,30 @@
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-bottom: 1px solid $header-line-color;
     .container {
+        width: 100%;
         display: flex;
         align-items: center;
         margin: 0;
     }
+    .menu-toggle {
+        display: flex;
+        margin-right: 0;
+        background-color: $background-color-one;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
     @media screen and (min-width: 1200px) {
         height: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-display {
+        display: none;
     }
 }
 
@@ -23,30 +39,35 @@
         color: $accent-color;
     }
 }
-@media screen and (min-width: 768px) {
-    .header__mobile {
-        position: static;
-        white-space: nowrap;
-        width: 100%;
-        height: 100%;
-        border: none;
-        padding: 60px 0;
-        clip-path: none;
-        margin: 0;
-    }
-}
+// @media screen and (max-width: 1200px) {
+//     .header__mobile {
+//         position: static;
+//         white-space: nowrap;
+//         width: 100%;
+//         height: 100%;
+//         border: none;
+//         padding: 60px 0;
+//         clip-path: none;
+//         margin: 0;
+//     }
+// }
 .nav {
     margin-right: auto;
     .nav-list {
-        display: flex;
-        margin-right: auto;
+        // display: flex;
+        // margin-right: auto;
         .nav-list__item {
-            margin-right: 50px;
-            position: relative;
+            margin-bottom: 32px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            // margin-right: 50px;
+            // position: relative;
         }
         .nav-list__link {
             font-weight: 500;
-            line-height: 1.14;
+            font-size: 40px;
+            line-height: 1.17;
             letter-spacing: 0.02em;
             color: $primary-text-color;
             transition-property: color;
@@ -59,17 +80,20 @@
         }
         
         .current-link {
-            font-weight: 500;
             color: $accent-color;
             &::after {
-                position: absolute;
-                content: ' ';
-                width: 100%;
-                height: 4px;
-                bottom: -33.5px;
-                left: 0;
-                border-radius: 2px;
-                background-color: $accent-color;
+                display: none;
+                @media screen and (min-width: 767px) {
+                    display: block;
+                    position: absolute;
+                    content: ' ';
+                    width: 100%;
+                    height: 4px;
+                    bottom: -33.5px;
+                    left: 0;
+                    border-radius: 2px;
+                    background-color: $accent-color;
+                }
             }
         }
     }
@@ -77,11 +101,15 @@
 
 
 .contacts {
+    // display: flex;
+    // align-items: center;
+    margin-top: auto;
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
     .contacts__link {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
+        display: block;
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -95,11 +123,26 @@
         }
     }
     .header__mail {
-        margin-right: 50px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        margin-bottom: 64px;
+    }
+    .header__tel {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+        margin-bottom: 32px;
     }
     .contacts__icon {
-        display: inline-block;
-        margin-right: 10px;
-        fill: currentColor;
+            display: inline-block;
+            margin-right: 10px;
+            fill: currentColor;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 }
