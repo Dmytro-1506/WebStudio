@@ -173,6 +173,11 @@ button {
   align-items: center;
   margin: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header .container {
+    width: 780px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;
