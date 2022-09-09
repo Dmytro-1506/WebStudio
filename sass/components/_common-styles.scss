@@ -4,7 +4,6 @@
 }
 
 .container {
-    // width: 1200px;
     max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
@@ -85,4 +84,15 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color:  $accent-color;
+}
+
+.nav__link {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+}
+
+.current-link {
+    color: $accent-color;
 }
