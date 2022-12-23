@@ -19,7 +19,6 @@
     }
     .clients__list-item {
         width: calc((100% - 30px) / 2);
-        // margin-right: 30px;
         @media screen and (min-width: 768px) {
             width: calc((100% - 30px * 2) / 3);
         }
@@ -27,9 +26,6 @@
             width: 170px;
         }
     }
-    // .clients__list-item:last-child {
-        // margin-right: 0;
-    // }
     .clients__link {
         display: flex;
         width: 100%;
