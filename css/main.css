@@ -689,11 +689,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .works {
-    flex-wrap: nowrap;
     max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 }
 .works .works__item {
