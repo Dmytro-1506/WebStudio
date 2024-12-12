@@ -1292,15 +1292,38 @@ button {
   padding-right: 5px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .contacts-page .my-contacts__description {
+    max-width: 460px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-page .my-contacts__description {
+    max-width: 600px;
+  }
+}
 .contacts-page .my-contacts__title {
   text-align: left;
   font-size: 28px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .contacts-page .my-contacts__title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
 .contacts-page .my-contacts__about-me {
   line-height: 1.71;
   color: #757575;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-page .my-contacts__about-me {
+    margin-bottom: 30px;
+  }
 }
 .contacts-page .my-contacts__subtitle {
   font-weight: 700;
@@ -1308,6 +1331,12 @@ button {
   line-height: 1.14;
   color: #212121;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-page .my-contacts__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }
 .contacts-page .my-photo {
   display: flex;
