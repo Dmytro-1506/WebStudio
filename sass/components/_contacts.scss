@@ -1,0 +1,36 @@
+.contacts-page {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .my-contacts__description {
+        max-width: 400px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0 auto;
+    }
+
+    .my-contacts__title {
+        @extend .title;
+        text-align: left;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .my-contacts__subtitle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        color: $primary-text-color;
+        margin-bottom: 10px;
+    }
+    .my-contacts__about-me {
+        line-height: 1.71;
+        color: $secondary-text-color;
+        margin-bottom: 10px;
+    }
+    .my-photo {
+        img {
+            margin: 0 auto;
+            max-width: 400px;
+        }
+    }
+}

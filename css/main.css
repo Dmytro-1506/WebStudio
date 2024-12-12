@@ -79,7 +79,7 @@ button {
   margin: -1px;
 }
 
-.title, .clients .clients__title, .our-job .our-job__title {
+.title, .contacts-page .my-contacts__title, .clients .clients__title, .our-job .our-job__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -1275,4 +1275,36 @@ button {
   margin-top: auto;
   display: flex;
   flex-direction: column-reverse;
+}
+
+.contacts-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contacts-page .my-contacts__description {
+  max-width: 400px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+.contacts-page .my-contacts__title {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.contacts-page .my-contacts__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.contacts-page .my-contacts__about-me {
+  line-height: 1.71;
+  color: #757575;
+  margin-bottom: 10px;
+}
+.contacts-page .my-photo img {
+  margin: 0 auto;
+  max-width: 400px;
 }/*# sourceMappingURL=main.css.map */
